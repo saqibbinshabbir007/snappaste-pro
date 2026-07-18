@@ -166,6 +166,22 @@ Requires [Node.js](https://nodejs.org). See it on npm: **https://www.npmjs.com/p
 
 ---
 
+## 🔄 Updating
+
+Already installed an older version? Getting the latest is easy — there's nothing to uninstall first.
+
+**npm:**
+```bash
+npx snappaste-pro@latest install
+```
+> Tip: include **`@latest`** so npx doesn't reuse a cached older version.
+
+**Installer:** download the newest **`SnapPaste-Pro-Setup.exe`** from the
+[Releases](https://github.com/saqibbinshabbir007/snappaste-pro/releases/latest) page and run it —
+it upgrades your existing install in place.
+
+---
+
 ## 🙋 FAQ
 
 **Is it safe?**
