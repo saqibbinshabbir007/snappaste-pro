@@ -82,7 +82,13 @@ try {
 
 # --- Path ko clipboard pe text ki tarah daalo ---
 if (-not $NoClipboard) {
-    Set-Clipboard -Value $fullPath
+    try {
+        Set-Clipboard -Value $fullPath
+    } catch {
+        if (-not $Quiet) {
+            Write-Host "Clipboard pe path set nahi ho saka: $_" -ForegroundColor Yellow
+        }
+    }
 }
 
 # --- Path output karo (taake terminal mein dikhe) ---
