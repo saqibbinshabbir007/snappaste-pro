@@ -5,7 +5,7 @@
 ; ============================================================
 
 #define MyAppName "SnapPaste Pro"
-#define MyAppVersion "1.0.1"
+#define MyAppVersion "1.0.2"
 #define MyAppPublisher "Saqib Bin Shabbir - Full Stack Developer & Agentic AI Specialist"
 #define MyAppExeName "AutoHotkey64.exe"
 #define MyAhkScript "ClipboardImagePaste.ahk"
