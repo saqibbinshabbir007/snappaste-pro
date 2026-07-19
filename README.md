@@ -4,7 +4,7 @@
 
 ### Mac-style screenshot paste for Windows terminals
 
-**Press `Ctrl + V` to paste a screenshot straight into your terminal — exactly like macOS.**
+**Press `Ctrl + V` to paste a screenshot straight into your terminal, exactly like macOS.**
 Built for **terminal AI coding assistants**: hand a screenshot to your AI in a single keystroke.
 
 [![npm version](https://img.shields.io/npm/v/snappaste-pro?color=cb3837&logo=npm)](https://www.npmjs.com/package/snappaste-pro)
@@ -25,10 +25,10 @@ Built for **terminal AI coding assistants**: hand a screenshot to your AI in a s
 ## 🎬 Demo
 
 <p align="center">
-  <img src="docs/demo.gif" alt="SnapPaste Pro demo — paste a screenshot into the terminal and the AI reads it" width="100%">
+  <img src="docs/demo.gif" alt="SnapPaste Pro demo: paste a screenshot into the terminal and the AI reads it" width="100%">
 </p>
 
-> A screenshot pasted straight into the terminal with **`Ctrl + V`** — and the AI reads it instantly. That's the whole point. 🎯
+> A screenshot pasted straight into the terminal with **`Ctrl + V`**, and the AI reads it instantly. That's the whole point. 🎯
 
 ---
 
@@ -50,11 +50,11 @@ Every Windows developer knows this pain. Here's what changes:
 
 ## ⚡ Quick Start
 
-**For everyone — installer** (no Node.js, no admin):
+**For everyone** (installer, no Node.js, no admin):
 1. [**Download `SnapPaste-Pro-Setup.exe`**](https://github.com/saqibbinshabbir007/snappaste-pro/releases/latest) → run it → **Next → Next → Finish**
 2. Take a screenshot (`Win + Shift + S`) and press `Ctrl + V` in your terminal 🎉
 
-**For developers — npm:**
+**For developers (npm):**
 ```bash
 npx snappaste-pro install
 ```
@@ -63,7 +63,7 @@ npx snappaste-pro install
 
 ## ❓ What it does
 
-On macOS you can paste a screenshot straight into a terminal. On Windows you can't — the
+On macOS you can paste a screenshot straight into a terminal. On Windows you can't. The
 clipboard holds an **image**, but terminals only paste **text**. So `Ctrl + V` does nothing.
 
 **SnapPaste Pro fixes that.** When you press `Ctrl + V` in a terminal:
@@ -97,13 +97,13 @@ AI can see what you see. 👀
 
 ## ✨ Features
 
-- 🖼️ **Image → path, instantly** — screenshots become a ready-to-use file path.
-- 🪶 **Lightweight & clean** — no Python, no extra runtimes; AutoHotkey is bundled.
-- 🔒 **No admin required** — installs per-user.
-- 🚀 **Auto-start** — runs quietly in the background on login.
-- 🎯 **Smart** — only triggers on images; text paste is untouched and just as fast.
-- 🧰 **Extra commands** — `pi` (PowerShell) and `pasteimg` (CMD).
-- 🌐 **Private & offline** — never sends any data anywhere.
+- 🖼️ **Image → path, instantly:** screenshots become a ready-to-use file path.
+- 🪶 **Lightweight & clean:** no Python, no extra runtimes; AutoHotkey is bundled.
+- 🔒 **No admin required:** installs per-user.
+- 🚀 **Auto-start:** runs quietly in the background on login.
+- 🎯 **Smart:** only triggers on images; text paste is untouched and just as fast.
+- 🧰 **Extra commands:** `pi` (PowerShell) and `pasteimg` (CMD).
+- 🌐 **Private & offline:** never sends any data anywhere.
 
 ---
 
@@ -138,7 +138,7 @@ normally. Everything runs locally on your machine.
 ### Installer
 Download **`SnapPaste-Pro-Setup.exe`** from the [Releases](https://github.com/saqibbinshabbir007/snappaste-pro/releases/latest) page and run it. No admin needed.
 
-> ### ⚠️ "Windows protected your PC" — this is normal, please read
+> ### ⚠️ "Windows protected your PC": this is normal, please read
 >
 > The first time you run the installer, Windows SmartScreen may show a blue
 > **"Windows protected your PC"** screen with **"Unknown publisher"**.
@@ -149,10 +149,10 @@ Download **`SnapPaste-Pro-Setup.exe`** from the [Releases](https://github.com/sa
 > 1. Click **More info**
 > 2. Click **Run anyway**
 >
-> That's it — it won't ask again. ✅
+> That's it, it won't ask again. ✅
 >
 > **Why you can trust it:** the entire source code is public in this repo, so anyone
-> can read exactly what it does. It works fully offline — it never sends any data
+> can read exactly what it does. It works fully offline. It never sends any data
 > anywhere, doesn't touch your files, and only reacts to `Ctrl + V` inside terminals.
 
 ### npm (developers)
@@ -165,7 +165,7 @@ npx snappaste-pro --version    # show CLI version
 ```
 Requires [Node.js](https://nodejs.org). See it on npm: **https://www.npmjs.com/package/snappaste-pro**
 
-**`status` output looks like this** — it tells you which version you have and whether an update is available:
+**`status` output looks like this.** It tells you which version you have and whether an update is available:
 
 ```text
 SnapPaste Pro status
@@ -186,7 +186,7 @@ npx snappaste-pro status
 ```
 It shows your installed version and tells you if an update is available.
 
-Already on an older version? Getting the latest is easy — there's nothing to uninstall first.
+Already on an older version? Getting the latest is easy, there's nothing to uninstall first.
 
 **npm:**
 ```bash
@@ -195,8 +195,8 @@ npx snappaste-pro@latest install
 > Tip: include **`@latest`** so npx doesn't reuse a cached older version.
 
 **Installer:** download the newest **`SnapPaste-Pro-Setup.exe`** from the
-[Releases](https://github.com/saqibbinshabbir007/snappaste-pro/releases/latest) page and run it —
-it upgrades your existing install in place.
+[Releases](https://github.com/saqibbinshabbir007/snappaste-pro/releases/latest) page and run it.
+It upgrades your existing install in place.
 
 ---
 
@@ -208,7 +208,7 @@ files, and only reacts to `Ctrl + V` inside terminal windows.
 
 **Why does Windows show a SmartScreen warning?**
 The installer isn't code-signed yet (signing is a paid certificate). It does **not** mean the
-app is harmful — click **More info → Run anyway**.
+app is harmful. Click **More info → Run anyway**.
 
 **Where are my screenshots saved?**
 In `…\Pictures\SnapPaste Pro\`, named `screenshot_<timestamp>.png`.
@@ -220,13 +220,13 @@ No. It only acts when the clipboard contains an image; text paste is unchanged.
 
 ## 🗺️ Roadmap
 
-- [ ] **Code-signed installer** — remove the SmartScreen warning entirely.
-- [ ] **Choose your format** — PNG or JPG, and a configurable save folder.
-- [ ] **System-tray settings** — pause/resume, change hotkey, open save folder.
+- [ ] **Code-signed installer:** remove the SmartScreen warning entirely.
+- [ ] **Choose your format:** PNG or JPG, and a configurable save folder.
+- [ ] **System-tray settings:** pause/resume, change hotkey, open save folder.
 - [ ] **Multi-monitor & high-DPI** polish.
 - [ ] **Standalone build** with no bundled runtime.
 
-Have an idea? [Open an issue](https://github.com/saqibbinshabbir007/snappaste-pro/issues) — feedback is welcome!
+Have an idea? [Open an issue](https://github.com/saqibbinshabbir007/snappaste-pro/issues). Feedback is welcome!
 
 ---
 
@@ -276,6 +276,6 @@ Full Stack Developer &amp; Agentic AI Specialist
 [npm](https://www.npmjs.com/package/snappaste-pro) ·
 [Issues](https://github.com/saqibbinshabbir007/snappaste-pro/issues)
 
-**If SnapPaste Pro saved you time, please give it a ⭐ — it really helps!**
+**If SnapPaste Pro saved you time, please give it a ⭐. It really helps!**
 
 </div>
