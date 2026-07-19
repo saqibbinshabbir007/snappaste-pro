@@ -19,6 +19,9 @@ src/AutoHotkey64.exe
 # Inno Setup build leftovers
 *.iss.bak
 
+# Generated at compile time by SnapPastePro.iss (from MyAppVersion) — never edit by hand
+src/version.txt
+
 # OS / editor cruft
 Thumbs.db
 desktop.ini

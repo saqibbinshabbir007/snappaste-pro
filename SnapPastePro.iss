@@ -5,10 +5,15 @@
 ; ============================================================
 
 #define MyAppName "SnapPaste Pro"
-#define MyAppVersion "1.0.2"
+#define MyAppVersion "1.1.0"
 #define MyAppPublisher "Saqib Bin Shabbir - Full Stack Developer & Agentic AI Specialist"
 #define MyAppExeName "AutoHotkey64.exe"
 #define MyAhkScript "ClipboardImagePaste.ahk"
+
+; Generate src\version.txt at COMPILE time from MyAppVersion (single source of truth).
+; It ships via [Files], so `npx snappaste-pro status` can report the installed version,
+; and the uninstaller removes it automatically.
+#expr SaveStringToFile("src\version.txt", MyAppVersion, 0)
 
 [Setup]
 AppId={{B8E6F1A2-3C4D-4E5F-9A7B-7C2D9F0A1E55}
@@ -48,6 +53,8 @@ Source: "src\pasteimg.cmd";             DestDir: "{app}"; Flags: ignoreversion
 Source: "src\Setup-Integration.ps1";    DestDir: "{app}"; Flags: ignoreversion
 Source: "src\About.txt";                DestDir: "{app}"; Flags: ignoreversion
 Source: "src\LICENSE.txt";              DestDir: "{app}"; Flags: ignoreversion
+; Version stamp (generated at compile time above) -- read by `npx snappaste-pro status`
+Source: "src\version.txt";              DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 ; Auto-start on login

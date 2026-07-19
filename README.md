@@ -158,17 +158,35 @@ Download **`SnapPaste-Pro-Setup.exe`** from the [Releases](https://github.com/sa
 ### npm (developers)
 ```bash
 npx snappaste-pro install      # set up and start
-npx snappaste-pro status       # show status
+npx snappaste-pro status       # show status (incl. installed version)
 npx snappaste-pro start        # start it now
 npx snappaste-pro uninstall    # remove completely
+npx snappaste-pro --version    # show CLI version
 ```
 Requires [Node.js](https://nodejs.org). See it on npm: **https://www.npmjs.com/package/snappaste-pro**
+
+**`status` output looks like this** — it tells you which version you have and whether an update is available:
+
+```text
+SnapPaste Pro status
+  installed:    yes (C:\Users\You\AppData\Roaming\SnapPaste Pro)
+  version:      1.1.0
+  CLI version:  1.1.0
+  auto-start:   yes
+  running now:  yes
+```
 
 ---
 
 ## 🔄 Updating
 
-Already installed an older version? Getting the latest is easy — there's nothing to uninstall first.
+**First, check what you have:**
+```bash
+npx snappaste-pro status
+```
+It shows your installed version and tells you if an update is available.
+
+Already on an older version? Getting the latest is easy — there's nothing to uninstall first.
 
 **npm:**
 ```bash
